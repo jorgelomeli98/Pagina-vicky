@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vicky Urzua | Psicóloga Clínica</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .hero {
+        padding: 150px 0 100px;
+        background: linear-gradient(
+          -45deg,
+          rgba(238, 119, 82, 0.6),
+          rgba(231, 60, 126, 0.6),
+          rgba(35, 166, 213, 0.6),
+          rgba(35, 213, 171, 0.6)
+        );
+        background-size: 400% 400%;
+        color: white;
+        text-align: center;
+        position: relative;
+        animation: gradient 15s ease infinite;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto 30px;
+        position: relative;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#inicio" class="logo"
+            ><img
+              style="width: 1.2rem; height: 100%"
+              src="/assets/psi-svgrepo-com.svg"
+            />
+            Virginia Urzua</a
+          >
+          <button class="menu-toggle" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="inicio">
+      <div class="container">
+        <i
+          ><img
+            src="/assets/cognition_64dp_FFC107_FILL0_wght400_GRAD0_opsz48.svg"
+            style="width: 11.3rem"
+        /></i>
+        <h1>Bienestar emocional para una vida plena</h1>
+        <p>
+          Terapia psicológica personalizada para ayudarte a superar desafíos
+          emocionales y alcanzar tu máximo potencial.
+        </p>
+
+        <a href="#contacto" class="btn">Agendar cita</a>
+        <a href="#servicios" class="btn btn-outline">Conoce mis servicios</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre-mi">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sobre mí</h2>
+          <p>
+            Conoce a la profesional que te acompañará en tu proceso de
+            crecimiento personal y emocional.
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="/assets/foto-vicky.jpg" alt="Vicky Urzua" />
+          </div>
+          <div class="about-text">
+            <h3>Virginia Urzua</h3>
+            <h4>Psicologa clinica</h4>
+            <p>
+              ¡Hola! Soy <strong>Virginia Urzúa</strong>, psicóloga con enfoque
+              <strong>cognitivo-conductual</strong>, egresada de la Universidad de Guadalajara.
+            </p>
+            <p>
+              Cuento con formación en psicoterapia <strong>cognitivo-conductual</strong> y
+              actualmente estudio un diplomado en <strong>terapia dialéctico-conductual</strong>.
+              He complementado mi preparación con cursos sobre <strong>violencia de</strong>
+              <strong>género</strong>, <strong>adicción a la tecnología</strong>, <strong>intervención en crisis</strong> y
+              <strong>promoción de la salud mental</strong>.
+            </p>
+            <p>
+              Tengo <strong>dos años de experiencia</strong> brindando acompañamiento psicológico
+              supervisado, trabajando con problemáticas como <strong>ansiedad</strong>, <strong>duelo</strong>,
+              <strong>depresión moderada</strong>, <strong>autoestima</strong> y <strong>dependencia emocional</strong>.
+            </p>
+            <p>
+              Fui ponente en el <strong>
+                IX Congreso Latinoamericano de Psicología de la
+                Salud
+              </strong> y actualmente ofrezco atención tanto presencial como en
+              línea.
+            </p>
+            <p>
+              Creo firmemente que enfrentar las dificultades emocionales con
+              apoyo profesional puede marcar la diferencia. Acompañarte en este
+              proceso es para mí un <strong>honor y un compromiso profundo</strong>.
+            </p>
+            <a href="#contacto" class="btn">Contactar ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-title">
+          <h2>Mis Servicios</h2>
+          <p>
+            Ofrezco terapia psicológica especializada para diversas necesidades
+            emocionales y de desarrollo personal.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Terapia Individual</h3>
+            <p>
+              Sesiones personalizadas para trabajar ansiedad, depresión,
+              autoestima, duelo y otros desafíos emocionales.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Desarrollo habilidades socioemocionales</h3>
+            <p>
+              Procesos diseñados para fortalecer la autoestima, mejorar la
+              comunicación, manejar las emociones y fomentar relaciones sanas y
+              conscientes.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <h3>Terapia a Adolescentes</h3>
+            <p>
+              Enfoque especializado para adolescentes que enfrentan dificultades
+              emocionales, conductuales o en su desarrollo personal.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Orientación Vocacional</h3>
+            <p>
+              Asesoramiento para tomar decisiones educativas y profesionales
+              acordes a tus habilidades e intereses.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Diseño e implementacion de Talleres</h3>
+            <p>
+              Espacios de crecimiento personal en temas como manejo del estrés,
+              inteligencia emocional y más.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Terapia Online</h3>
+            <p>
+              Sesiones virtuales para quienes prefieren la comodidad de
+              atenderse desde su hogar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <div class="section-title">
+          <h2>Testimonios</h2>
+          <p>Lo que dicen mis pacientes sobre su experiencia en terapia.</p>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial">
+            <p class="testimonial-text">
+              Vicky, únicamente quiero agradecerte por todo el apoyo que me has
+              brindado, el que me escuches , quiero agradecerte porque gracias a
+              tu apoyo desde que comencé el proceos he superado varias
+              situaciones difíciles en mi vida y que mi vida ha mejorado en
+              varios sentidos poco a poco y disfrutando de la misma
+            </p>
+            <p class="testimonial-author">- Carlos M., 34 años</p>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">
+              Cuando sientes que ni tus ideas te ayudan un especialista te puede
+              dar las herramientas para validar si tus creencias sobre ti son
+              coherentes o si son ideas no reflexionadas. Toma tiempo liberarse
+              de sesgos pero puedes notar el cambio cuando puedes vivir mejor
+              tus emociones y no necesariamente controlarlas o reprimirlas. Le
+              agradezco mucho a la psicología y a la Psic. Virginia Urzua que me
+              ha acompañado en el proceso, ahora puedo entenderme un poco más a
+              mi mismo y es más fácil encontrarme cuando me siento perdido
+            </p>
+            <p class="testimonial-author">- Carlos M., 34 años</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>
+            Agenda una cita o contáctame para cualquier consulta. Estoy aquí
+            para ayudarte.
+          </p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Información de contacto</h3>
+            <p>
+              Puedes comunicarte conmigo a través de los siguientes medios o
+              visitar mi consultorio en el horario de atención.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/iQkGzQ4NdJycEsybA"
+                  target="_blank"
+                  ><p class="info-item">
+                    C. Colonias 555, Col Americana, Americana, 44170
+                    Guadalajara, Jal.
+                  </p></a
+                >
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <a href="https://wa.me/523315292260" target="_blank"
+                  ><p class="info-item">+52 33 15 29 2260</p></a
+                >
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <a
+                  href="mailto:psicol.virginiaurzuavirgen04@gmail.com"
+                  target="_blank"
+                  ><p class="info-item">
+                    psicol.virginiaurzuavirgen04@gmail.com
+                  </p></a
+                >
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/iQkGzQ4NdJycEsybA"
+                  target="_blank"
+                  ><p class="info-item">
+                    L-V 10:00am - 7:00pm, S 10:00am - 2:00pm
+                  </p></a
+                >
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/share/15RhAi3bHh/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/psic.virginia.urzua?igsh=MXNzaGhlcGd5OWM2bA=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@psic.virginiaurzu?_t=ZS-8xD7DmgW1yb&_r=1"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a
+                href="https://wa.me/523315292260?text=Hola,%20quisiera%20agendar%20una%20cita"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="formulario-contacto">
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono (opcional)</label>
+                <input type="tel" id="telefono" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" class="form-control" required>
+                  <option value="">Seleccione un servicio</option>
+                  <option value="terapia-individual">Terapia Individual</option>
+                  <option value="capacitacion-habilidades">
+                    Desarrollo habilidades socioemocionales
+                  </option>
+                  <option value="terapia-adolescentes">
+                    Terapia a adolescentes
+                  </option>
+                  <option value="orientacion-vocacional">
+                    Orientación Vocacional
+                  </option>
+                  <option value="talleres">Talleres de capacitacion</option>
+                  <option value="terapia-online">Terapia Online</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Vicky Urzua</h3>
+            <p>
+              Psicóloga clínica especializada en ayudar a personas a alcanzar su
+              bienestar emocional y desarrollo personal.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Enlaces rápidos</h3>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#sobre-mi">Sobre mí</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#testimonios">Testimonios</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul>
+              <li>
+                <a href="https://maps.app.goo.gl/iQkGzQ4NdJycEsybA"
+                  ><i class="fas fa-map-marker-alt"></i> Calle Principal 123,
+                  Ciudad
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/523315292260"
+                  ><i class="fas fa-phone-alt"></i> +52 33 15 29 2260</a
+                >
+              </li>
+              <li>
+                <a href="mailto:psicol.virginiaurzuavirgen04@gmail.com"
+                  ><i class="fas fa-envelope"></i>
+                  psicol.virginiaurzuavirgen04@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; Sitio realizado por <a href="#">Jorge Lomeli</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón Tema Oscuro -->
+    <button class="theme-toggle" aria-label="Cambiar tema">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </button>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>
