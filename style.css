@@ -936,6 +936,10 @@ footer::before {
     margin: 20px 0;
   }
 
+  .info-item{
+    font-size: 0.65rem;
+  }
+
   .footer-content {
     flex-direction: column;
     gap: 30px;
