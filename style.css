@@ -686,16 +686,16 @@ nav {
 
 .contact-form {
   flex: 1;
-  background-color: var(--paper); /* Asegura que use el color papel */
-  background-blend-mode: overlay; /* Mezcla el color y la textura */
+  background-color: var(--paper); 
+  background-blend-mode: overlay; 
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transform: translateX(50px);
   opacity: 0;
   transition: all 0.8s ease 0.2s;
-  position: relative; /* Necesario para el pseudo-elemento */
-  z-index: 1; /* Asegura que esté por encima de otros elementos */
+  position: relative;
+  z-index: 1;
 }
 .contact-form.visible {
   transform: translateX(0);
@@ -734,7 +734,7 @@ nav {
   border-radius: 5px;
   font-size: 1rem;
   transition: border-color 0.3s;
-  background-color: var(--paper-overlay); /* Fondo semi-transparente */
+  background-color: var(--paper-overlay);
   color: var(--text);
 }
 
@@ -742,7 +742,7 @@ nav {
   border-color: var(--primary);
   outline: none;
   box-shadow: 0 0 0 2px rgba(21, 101, 192, 0.2);
-  background-color: white; /* Fondo sólido al enfocar */
+  background-color: white; 
 }
 
 textarea.form-control {

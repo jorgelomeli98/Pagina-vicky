@@ -11,7 +11,7 @@ const DOM = {
     ".about-img, .about-text, .service-card, .testimonial, .contact-info, .contact-form"
   ),
   navLinksContainer: document.querySelector(".nav-links"),
-  serviceCards: document.querySelectorAll(".service-card"), // Añadido para manejar las tarjetas
+  serviceCards: document.querySelectorAll(".service-card"),
 };
 
 // Configuración de temas
@@ -34,7 +34,7 @@ const THEME = {
   },
 };
 
-// Scroll suave mejorado y probado
+// Scroll 
 const SmoothScroll = {
   scrollTo(target, offset = 80) {
     if (!target || target === "#") return;
@@ -128,7 +128,7 @@ ${mensaje}
       asunto
     )}&body=${encodeURIComponent(cuerpo)}`;
 
-    // Redirige al enlace
+
     window.location.href = mailtoLink;
     DOM.form.reset();
   },
@@ -158,19 +158,18 @@ ${mensaje}
     const card = e.target.closest(".service-card");
     if (!card) return;
 
-    // SOLUCIÓN CLAVE: Reset completo con transición temporal
+
     card.style.transition = "transform 0.4s ease, box-shadow 0.4s ease";
     card.style.transform =
       "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)";
     card.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
 
-    // Eliminar la transición después de completarse
+
     setTimeout(() => {
       card.style.transition = "";
     }, 400);
   },
 
-  // Nueva función para manejar el mouseout en cada tarjeta individualmente
   setupCardHoverEffects() {
     DOM.serviceCards.forEach((card) => {
       card.addEventListener("mouseenter", () => {
